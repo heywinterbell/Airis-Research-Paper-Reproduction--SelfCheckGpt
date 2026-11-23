@@ -6,7 +6,7 @@ Reads the JSONL run logs in results/runs/ and reports:
   - per model: accuracy, consistency vs correctness split, AUC and AUC-PR
     of consistency as a correctness predictor
   - cross-model: agreement across the two models' samples, its AUC, and how
-    many confidently-wrong cases (5/5 within-model agreement, wrong answer)
+    many confidently-wrong cases (all samples agree, wrong answer)
     cross-model disagreement catches
   - majority vote (Extension 2): per-model and cross-model accuracy of the
     most common sampled answer vs the greedy answer
@@ -154,11 +154,13 @@ def main():
                                   if model_ap is not None else None),
             "majority_vote_accuracy": (round(mv_acc, 3)
                                        if mv_acc is not None else None),
-            "n_5_of_5_agree": len(hi),
-            "correct_when_5_of_5": round(hi_rate, 3) if hi_rate is not None else None,
-            "n_2_or_fewer_agree": len(lo),
-            "correct_when_2_or_fewer": round(lo_rate, 3) if lo_rate is not None else None,
+            "n_all_agree": len(hi),
+            "correct_when_all_agree": round(hi_rate, 3) if hi_rate is not None else None,
+            "n_low_agree": len(lo),
+            "correct_when_low_agree": round(lo_rate, 3) if lo_rate is not None else None,
         }
+        n_samp = rows[0][4] if rows else 0
+        lo_max = int(0.4 * n_samp)
         lines.append(f"## {model}")
         lines.append(f"- Greedy accuracy: {acc:.1%} ({sum(labels)}/{len(labels)})")
         lines.append(f"- AUC of consistency as a correctness predictor: "
@@ -170,12 +172,12 @@ def main():
                      f"({sum(mv_labels)}/{len(mv_labels)})"
                      if mv_acc is not None
                      else "- Majority-vote accuracy: n/a")
-        lines.append(f"- 5/5 agree: {len(hi)} questions, "
+        lines.append(f"- {n_samp}/{n_samp} agree: {len(hi)} questions, "
                      f"{hi_rate:.1%} correct" if hi_rate is not None
-                     else "- 5/5 agree: none")
-        lines.append(f"- 2/5 or fewer agree: {len(lo)} questions, "
+                     else f"- {n_samp}/{n_samp} agree: none")
+        lines.append(f"- {lo_max}/{n_samp} or fewer agree: {len(lo)} questions, "
                      f"{lo_rate:.1%} correct" if lo_rate is not None
-                     else "- 2/5 or fewer agree: none")
+                     else f"- {lo_max}/{n_samp} or fewer agree: none")
         lines.append("")
 
     # ---- cross-model -------------------------------------------------------
@@ -200,9 +202,11 @@ def main():
             cross_labels.append(1 if is_correct(
                 majority, questions[qid]["answer"],
                 questions[qid].get("aliases", [])) else 0)
-            # confidently-wrong case: model A 5/5 agree but wrong
+            # confidently-wrong case: all of model A's samples agree with
+            # its greedy answer, but the greedy answer is wrong. (No fixed
+            # sample count: the run may use 3 samples or 5.)
             ga = normalize(ea["greedy"]["extracted"])
-            if len(sa) == 5 and all(s == ga for s in sa) and not ea["greedy"]["correct"]:
+            if sa and all(s == ga for s in sa) and not ea["greedy"]["correct"]:
                 total_cw += 1
                 if normalize(eb["greedy"]["extracted"]) != ga:
                     caught += 1
@@ -235,7 +239,7 @@ def main():
         lines.append(f"- AUC-PR of cross-model agreement: "
                      f"{cross_ap:.3f}" if cross_ap is not None
                      else "- AUC-PR: n/a")
-        lines.append(f"- Confidently-wrong cases (5/5 agree, wrong): {total_cw}")
+        lines.append(f"- Confidently-wrong cases (all samples agree, wrong): {total_cw}")
         lines.append(f"- Caught by cross-model disagreement: {caught}")
         lines.append(f"- Cross-model majority-vote accuracy: "
                      f"{cross_mv_acc:.1%} "
