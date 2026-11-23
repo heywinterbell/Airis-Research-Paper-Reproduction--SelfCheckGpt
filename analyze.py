@@ -62,8 +62,16 @@ def average_precision(scores, labels):
     return ap
 
 
-def load_logs(runs_dir):
-    """Return {(model, question_id): {'greedy': rec, 'samples': [rec, ...]}}."""
+def load_logs(runs_dir, questions=None):
+    """Return {(model, question_id): {'greedy': rec, 'samples': [rec, ...]}}.
+
+    Correctness is recomputed from the raw reply with the current scoring
+    rule (is_correct), not taken from the log's stored 'correct' field.
+    A log written by an older runner may carry scores from a buggy rule
+    (e.g. one-directional containment that marks a short correct answer
+    like 'Yes' wrong against a sentence gold), so the stored value cannot
+    be trusted. Rows whose question is unknown keep their stored value.
+    """
     data = defaultdict(lambda: {"greedy": None, "samples": []})
     for name in sorted(os.listdir(runs_dir)):
         if not name.endswith(".jsonl"):
@@ -71,6 +79,12 @@ def load_logs(runs_dir):
         with open(os.path.join(runs_dir, name)) as f:
             for line in f:
                 rec = json.loads(line)
+                if questions is not None:
+                    q = questions.get(rec["question_id"])
+                    if q is not None and rec.get("raw") is not None:
+                        rec["correct"] = is_correct(
+                            rec["raw"], q["answer"],
+                            q.get("aliases", []))
                 key = (rec["model"], rec["question_id"])
                 if rec["kind"] == "greedy":
                     data[key]["greedy"] = rec
@@ -88,7 +102,7 @@ def main():
 
     with open(args.questions) as f:
         questions = {q["id"]: q for q in json.load(f)}
-    data = load_logs(args.runs_dir)
+    data = load_logs(args.runs_dir, questions)
     models = sorted({m for m, _ in data})
     qids = sorted({q for _, q in data})
 
