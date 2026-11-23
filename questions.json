@@ -1,0 +1,573 @@
+[
+  {
+    "aliases": [],
+    "answer": "Paris",
+    "category": "geography",
+    "difficulty": "easy",
+    "id": "q01",
+    "question": "What is the capital of France?"
+  },
+  {
+    "aliases": [],
+    "answer": "Tokyo",
+    "category": "geography",
+    "difficulty": "easy",
+    "id": "q02",
+    "question": "What is the capital of Japan?"
+  },
+  {
+    "aliases": [],
+    "answer": "1969",
+    "category": "history",
+    "difficulty": "easy",
+    "id": "q03",
+    "question": "In which year did humans first land on the Moon?"
+  },
+  {
+    "aliases": [
+      "h2o"
+    ],
+    "answer": "H2O",
+    "category": "science",
+    "difficulty": "easy",
+    "id": "q04",
+    "question": "What is the chemical symbol for water?"
+  },
+  {
+    "aliases": [
+      "Shakespeare"
+    ],
+    "answer": "William Shakespeare",
+    "category": "culture",
+    "difficulty": "easy",
+    "id": "q05",
+    "question": "Who wrote Romeo and Juliet?"
+  },
+  {
+    "aliases": [],
+    "answer": "Jupiter",
+    "category": "science",
+    "difficulty": "easy",
+    "id": "q06",
+    "question": "What is the largest planet in our solar system?"
+  },
+  {
+    "aliases": [],
+    "answer": "Canberra",
+    "category": "geography",
+    "difficulty": "easy",
+    "id": "q07",
+    "question": "What is the capital of Australia?"
+  },
+  {
+    "aliases": [],
+    "answer": "366",
+    "category": "math",
+    "difficulty": "easy",
+    "id": "q08",
+    "question": "How many days are there in a leap year?"
+  },
+  {
+    "aliases": [
+      "100 degrees celsius",
+      "100 celsius",
+      "100 c"
+    ],
+    "answer": "100",
+    "category": "science",
+    "difficulty": "easy",
+    "id": "q09",
+    "question": "What is the boiling point of water at sea level in degrees Celsius?"
+  },
+  {
+    "aliases": [
+      "da Vinci",
+      "Leonardo"
+    ],
+    "answer": "Leonardo da Vinci",
+    "category": "culture",
+    "difficulty": "easy",
+    "id": "q10",
+    "question": "Who painted the Mona Lisa?"
+  },
+  {
+    "aliases": [],
+    "answer": "Ottawa",
+    "category": "geography",
+    "difficulty": "easy",
+    "id": "q11",
+    "question": "What is the capital of Canada?"
+  },
+  {
+    "aliases": [],
+    "answer": "12",
+    "category": "math",
+    "difficulty": "easy",
+    "id": "q12",
+    "question": "What is the square root of 144?"
+  },
+  {
+    "aliases": [],
+    "answer": "Africa",
+    "category": "geography",
+    "difficulty": "easy",
+    "id": "q13",
+    "question": "In which continent is Egypt located?"
+  },
+  {
+    "aliases": [
+      "CO2",
+      "carbon dioxide gas"
+    ],
+    "answer": "Carbon dioxide",
+    "category": "science",
+    "difficulty": "easy",
+    "id": "q14",
+    "question": "What gas do plants absorb from the atmosphere?"
+  },
+  {
+    "aliases": [
+      "Washington"
+    ],
+    "answer": "George Washington",
+    "category": "history",
+    "difficulty": "easy",
+    "id": "q15",
+    "question": "Who was the first President of the United States?"
+  },
+  {
+    "aliases": [],
+    "answer": "1879",
+    "category": "history",
+    "difficulty": "medium",
+    "id": "q16",
+    "question": "In which year was Albert Einstein born?"
+  },
+  {
+    "aliases": [],
+    "answer": "Oslo",
+    "category": "geography",
+    "difficulty": "medium",
+    "id": "q17",
+    "question": "What is the capital of Norway?"
+  },
+  {
+    "aliases": [
+      "Gabriel Garc\u00eda M\u00e1rquez",
+      "Marquez"
+    ],
+    "answer": "Gabriel Garcia Marquez",
+    "category": "culture",
+    "difficulty": "medium",
+    "id": "q18",
+    "question": "Who wrote One Hundred Years of Solitude?"
+  },
+  {
+    "aliases": [],
+    "answer": "Au",
+    "category": "science",
+    "difficulty": "medium",
+    "id": "q19",
+    "question": "What is the chemical symbol for gold?"
+  },
+  {
+    "aliases": [],
+    "answer": "1945",
+    "category": "history",
+    "difficulty": "medium",
+    "id": "q20",
+    "question": "In which year did World War II end?"
+  },
+  {
+    "aliases": [
+      "Pacific"
+    ],
+    "answer": "Pacific Ocean",
+    "category": "geography",
+    "difficulty": "medium",
+    "id": "q21",
+    "question": "What is the largest ocean on Earth?"
+  },
+  {
+    "aliases": [
+      "Bach",
+      "J. S. Bach"
+    ],
+    "answer": "Johann Sebastian Bach",
+    "category": "culture",
+    "difficulty": "medium",
+    "id": "q22",
+    "question": "Who composed the Brandenburg Concertos?"
+  },
+  {
+    "aliases": [],
+    "answer": "Wellington",
+    "category": "geography",
+    "difficulty": "medium",
+    "id": "q23",
+    "question": "What is the capital of New Zealand?"
+  },
+  {
+    "aliases": [],
+    "answer": "2007",
+    "category": "history",
+    "difficulty": "medium",
+    "id": "q24",
+    "question": "In which year was the first iPhone released?"
+  },
+  {
+    "aliases": [
+      "Mitochondrion"
+    ],
+    "answer": "Mitochondria",
+    "category": "science",
+    "difficulty": "medium",
+    "id": "q25",
+    "question": "What is known as the powerhouse of the cell?"
+  },
+  {
+    "aliases": [
+      "Austen"
+    ],
+    "answer": "Jane Austen",
+    "category": "culture",
+    "difficulty": "medium",
+    "id": "q26",
+    "question": "Who wrote Pride and Prejudice?"
+  },
+  {
+    "aliases": [
+      "Bras\u00edlia"
+    ],
+    "answer": "Brasilia",
+    "category": "geography",
+    "difficulty": "medium",
+    "id": "q27",
+    "question": "What is the capital of Brazil?"
+  },
+  {
+    "aliases": [],
+    "answer": "1947",
+    "category": "history",
+    "difficulty": "medium",
+    "id": "q28",
+    "question": "In which year did India gain independence?"
+  },
+  {
+    "aliases": [
+      "300,000",
+      "300000 km/s",
+      "300,000 km/s"
+    ],
+    "answer": "300000",
+    "category": "science",
+    "difficulty": "medium",
+    "id": "q29",
+    "question": "What is the speed of light in a vacuum in kilometres per second, rounded to the nearest thousand?"
+  },
+  {
+    "aliases": [
+      "van Gogh",
+      "Van Gogh"
+    ],
+    "answer": "Vincent van Gogh",
+    "category": "culture",
+    "difficulty": "medium",
+    "id": "q30",
+    "question": "Who painted The Starry Night?"
+  },
+  {
+    "aliases": [],
+    "answer": "Seoul",
+    "category": "geography",
+    "difficulty": "medium",
+    "id": "q31",
+    "question": "What is the capital of South Korea?"
+  },
+  {
+    "aliases": [],
+    "answer": "1945",
+    "category": "history",
+    "difficulty": "medium",
+    "id": "q32",
+    "question": "In which year was the United Nations founded?"
+  },
+  {
+    "aliases": [
+      "nacl"
+    ],
+    "answer": "NaCl",
+    "category": "science",
+    "difficulty": "medium",
+    "id": "q33",
+    "question": "What is the chemical formula of table salt?"
+  },
+  {
+    "aliases": [
+      "Curie",
+      "Madame Curie"
+    ],
+    "answer": "Marie Curie",
+    "category": "history",
+    "difficulty": "medium",
+    "id": "q34",
+    "question": "Who was the first woman to win a Nobel Prize?"
+  },
+  {
+    "aliases": [],
+    "answer": "Ankara",
+    "category": "geography",
+    "difficulty": "medium",
+    "id": "q35",
+    "question": "What is the capital of Turkey?"
+  },
+  {
+    "aliases": [
+      "Antarctica",
+      "Antarctic",
+      "the Antarctic Desert"
+    ],
+    "answer": "Antarctic Desert",
+    "category": "geography",
+    "difficulty": "trap",
+    "id": "q36",
+    "note": "Classic misconception: most people and many models answer Sahara. Sahara is the largest HOT desert; Antarctica is the largest desert overall (Guinness).",
+    "question": "What is the largest desert in the world?"
+  },
+  {
+    "aliases": [],
+    "answer": "12",
+    "category": "math",
+    "difficulty": "trap",
+    "id": "q37",
+    "note": "Common confusion with decagon (10 sides).",
+    "question": "How many sides does a dodecagon have?"
+  },
+  {
+    "aliases": [],
+    "answer": "Mercury",
+    "category": "science",
+    "difficulty": "trap",
+    "id": "q38",
+    "note": "Common confusion: Venus is the hottest planet, Mercury is the closest.",
+    "question": "Which planet is closest to the Sun?"
+  },
+  {
+    "aliases": [],
+    "answer": "1912",
+    "category": "history",
+    "difficulty": "trap",
+    "id": "q39",
+    "question": "In which year did the Titanic sink?"
+  },
+  {
+    "aliases": [
+      "NZ"
+    ],
+    "answer": "New Zealand",
+    "category": "history",
+    "difficulty": "trap",
+    "id": "q40",
+    "note": "Common wrong answers: USA, UK. New Zealand, Electoral Act 1893.",
+    "question": "Which country was the first to grant women the right to vote?"
+  },
+  {
+    "aliases": [
+      "humming bird"
+    ],
+    "answer": "Hummingbird",
+    "category": "science",
+    "difficulty": "trap",
+    "id": "q41",
+    "question": "What is the only bird that can fly backwards?"
+  },
+  {
+    "aliases": [
+      "three"
+    ],
+    "answer": "3",
+    "category": "science",
+    "difficulty": "trap",
+    "id": "q42",
+    "note": "Most people guess 1.",
+    "question": "How many hearts does an octopus have?"
+  },
+  {
+    "aliases": [],
+    "answer": "Venus",
+    "category": "science",
+    "difficulty": "trap",
+    "id": "q43",
+    "note": "Common confusion: Mercury is closest to the Sun, Venus is hottest (greenhouse effect).",
+    "question": "What is the hottest planet in our solar system?"
+  },
+  {
+    "aliases": [],
+    "answer": "Lead",
+    "category": "science",
+    "difficulty": "trap",
+    "id": "q44",
+    "question": "Which element has the chemical symbol Pb?"
+  },
+  {
+    "aliases": [
+      "Berne"
+    ],
+    "answer": "Bern",
+    "category": "geography",
+    "difficulty": "trap",
+    "id": "q45",
+    "note": "Common wrong answers: Zurich, Geneva. Switzerland has no de jure capital; Bern is the de facto capital / federal city.",
+    "question": "What is the capital of Switzerland?"
+  },
+  {
+    "aliases": [
+      "10,080"
+    ],
+    "answer": "10080",
+    "category": "math",
+    "difficulty": "trap",
+    "id": "q46",
+    "note": "Multi-step arithmetic (7 x 24 x 60); models often slip.",
+    "question": "How many minutes are there in a full week?"
+  },
+  {
+    "aliases": [
+      "two"
+    ],
+    "answer": "2",
+    "category": "math",
+    "difficulty": "trap",
+    "id": "q47",
+    "note": "Common wrong answer: 1. 1 is not prime.",
+    "question": "What is the smallest prime number?"
+  },
+  {
+    "aliases": [],
+    "answer": "India",
+    "category": "geography",
+    "difficulty": "trap",
+    "id": "q48",
+    "note": "Outdated-fact trap: China held the top spot for decades; India overtook it in April 2023 (UN). Models trained on older data often still answer China.",
+    "question": "Which country has the largest population in the world as of 2024?"
+  },
+  {
+    "aliases": [],
+    "answer": "Mercury",
+    "category": "science",
+    "difficulty": "trap",
+    "id": "q49",
+    "question": "What is the only metal that is liquid at room temperature?"
+  },
+  {
+    "aliases": [],
+    "answer": "Albany",
+    "category": "geography",
+    "difficulty": "trap",
+    "id": "q50",
+    "note": "Similar-name confusion: most people and many models answer New York City.",
+    "question": "What is the capital of the US state of New York?"
+  },
+  {
+    "id": "q51",
+    "difficulty": "trap",
+    "category": "science",
+    "question": "Which metal is the best conductor of electricity?",
+    "answer": "Silver",
+    "aliases": [],
+    "note": "Common wrong answers: copper, gold. Silver has the highest electrical conductivity of all metals; copper is the most commonly used, not the best."
+  },
+  {
+    "id": "q52",
+    "difficulty": "trap",
+    "category": "science",
+    "question": "Which gas makes up most of Earth's atmosphere?",
+    "answer": "Nitrogen",
+    "aliases": [
+      "Nitrogen gas",
+      "N2"
+    ],
+    "note": "Common wrong answer: oxygen. Nitrogen is ~78% of the atmosphere; oxygen is ~21%."
+  },
+  {
+    "id": "q53",
+    "difficulty": "trap",
+    "category": "geography",
+    "question": "Which country has the longest coastline in the world?",
+    "answer": "Canada",
+    "aliases": [],
+    "note": "Common wrong answers: Russia, Australia. Canada ~202,080 km (Guinness World Records)."
+  },
+  {
+    "id": "q54",
+    "difficulty": "trap",
+    "category": "culture",
+    "question": "What is the most spoken language in the world by native speakers?",
+    "answer": "Mandarin Chinese",
+    "aliases": [
+      "Mandarin",
+      "Chinese"
+    ],
+    "note": "Common wrong answer: English. English has the most TOTAL speakers, but Mandarin has the most native speakers (~900 million)."
+  },
+  {
+    "id": "q55",
+    "difficulty": "trap",
+    "category": "geography",
+    "question": "What is the capital of Australia?",
+    "answer": "Canberra",
+    "aliases": [],
+    "note": "Common wrong answer: Sydney. Canberra is the capital; Sydney is the largest city."
+  },
+  {
+    "id": "q56",
+    "difficulty": "trap",
+    "category": "science",
+    "question": "How many moons does Mars have?",
+    "answer": "2",
+    "aliases": [
+      "Two",
+      "two"
+    ],
+    "note": "Common wrong answer: 1. Mars has two moons, Phobos and Deimos."
+  },
+  {
+    "id": "q57",
+    "difficulty": "trap",
+    "category": "geography",
+    "question": "Which country has the most natural lakes in the world?",
+    "answer": "Canada",
+    "aliases": [],
+    "note": "Common wrong answers: Russia, Finland. Canada has ~62% of the world's lakes (HydroLAKES study, McGill)."
+  },
+  {
+    "id": "q58",
+    "difficulty": "trap",
+    "category": "geography",
+    "question": "What is the largest island in the world?",
+    "answer": "Greenland",
+    "aliases": [],
+    "note": "Common wrong answer: Australia. Australia is a continent, not an island. Greenland is the largest island."
+  },
+  {
+    "id": "q59",
+    "difficulty": "trap",
+    "category": "geography",
+    "question": "Which is the only country crossed by both the Equator and the Tropic of Capricorn?",
+    "answer": "Brazil",
+    "aliases": [],
+    "note": "Obscure geography fact; the model has to know both lines cross Brazil. The Equator crosses northern Brazil, the Tropic of Capricorn crosses southern Brazil (Wikipedia)."
+  },
+  {
+    "id": "q60",
+    "difficulty": "trap",
+    "category": "science",
+    "question": "How many bones are in the adult human body?",
+    "answer": "206",
+    "aliases": [
+      "Two hundred six",
+      "two hundred and six"
+    ],
+    "note": "Common wrong answer: 300. Babies are born with ~300 bones; adults have 206."
+  }
+]
